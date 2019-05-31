@@ -172,18 +172,12 @@ public class HexagonsManager {
 
 
     }
-
-    public long getStartRoundTime() {
-        return startRoundTime;
-    }
+    
 
     public int getCountBlockedCells() {
         return countBlockedCells;
     }
 
-//    public boolean isRunningRound() {
-//        return runningRound;
-//    }
 
 
     public int getElapsedRoundTimeSec() {
@@ -191,9 +185,6 @@ public class HexagonsManager {
             return 0;
         }
 
-//        if(!runningRound){
-//            return elapsedRoundTime;
-//        }
         if(state != DURING_STATE){
             return elapsedRoundTime;
         }
