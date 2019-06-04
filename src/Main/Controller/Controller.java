@@ -1,7 +1,5 @@
 package Main.Controller;
 
-import Model.Hexagon;
-import Model.HexagonsManager;
 import Model.Manager;
 
 import java.awt.event.MouseEvent;
@@ -26,18 +24,6 @@ public class Controller implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-
-//        if (!state3) {
-//            buttonsCtrl.mouseClick(e);
-//        }
-//
-//        if(!manager.getHexagonsManager().isRunningRound()){
-//            state3 = true;
-//        }
-//
-//        if(manager.getBtnRestart().getR().contains(e.getPoint())){
-//            state3 = false;
-//        }
         hexagonCtrl.onClick(e);
         buttonsCtrl.mouseClick(e);
     }

@@ -60,7 +60,7 @@ public class BombsManager {
         return count;
     }
 
-    private boolean isBomb(int i, int j) {
+    public boolean isBomb(int i, int j) {
         return i >= 0 && i < row && j >= 0 && j < col && bombs[i][j] == -1;
     }
 

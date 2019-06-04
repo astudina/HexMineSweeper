@@ -6,6 +6,7 @@ import Model.HexagonsManager;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 
+
 public class HexagonCtrl {
 
     private Hexagon[][] hexagons;
@@ -30,14 +31,14 @@ public class HexagonCtrl {
                         if(e.getButton() == 1) {
 
                             switch (manager.getState()){
-                                case HexagonsManager.INIT_STATE:
+                                case INIT_STATE:
                                     manager.generateBombs(i, j);
                                     manager.openCell(i, j);
                                     break;
-                                case HexagonsManager.DURING_STATE:
+                                case DURING_STATE:
                                     manager.openCell(i, j);
                                     break;
-                                case HexagonsManager.END_GAME_STATE:
+                                case END_GAME_STATE:
 
                                     break;
                             }
@@ -45,7 +46,7 @@ public class HexagonCtrl {
 
                         }
                         if(e.getButton() == 3) {
-                            if(manager.getState() == HexagonsManager.DURING_STATE) {
+                            if(manager.getState() == HexagonsManager.States.DURING_STATE) {
                                 manager.switchBlockCell(i, j);
                             }
                         }

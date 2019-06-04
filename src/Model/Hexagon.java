@@ -62,12 +62,13 @@ public class Hexagon {
     }
 
     public void open() {
-        if(!blocked | (blocked & value == -1)) {
+        if (!blocked) {
             closed = false;
         }
     }
 
-    public boolean isBlocked() {
+
+    public boolean isBlocked(){
         return blocked;
     }
 
